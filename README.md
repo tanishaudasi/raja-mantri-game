@@ -29,7 +29,6 @@ The backend is built using **Flask** and **SQLite**, handling room management, p
 
 ## ⚙️ How to Run
 
-```bash
 pip install flask flask-sqlalchemy
 python app.py
 
@@ -59,20 +58,18 @@ If Mantri guesses incorrectly, Chor steals Mantri’s points.
 
 ## API Example (Nice Bonus for GitHub)
 
-```bash
+
 POST /room/create
 {
   "playerName": "Alice"
 }
-bash
-Copy code
+
 POST /room/join
 {
   "roomId": "ROOM_ID",
   "playerName": "Bob"
 }
-bash
-Copy code
+
 POST /guess/ROOM_ID
 {
   "mantriId": "PLAYER_ID",
